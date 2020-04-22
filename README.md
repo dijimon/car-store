@@ -1,1 +1,2 @@
-# car-store
+# Car store
+Choose your favorite car
