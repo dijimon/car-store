@@ -1,0 +1,145 @@
+.carModelContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.carPicDesc {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 100vh;
+    position: relative;
+    background-color: #F1F3F2;
+}
+
+.carPicDesc img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carPicDesc h5 span {
+    font-weight: 200;
+}
+
+.carPicDesc h5 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.carDesc {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.carConfig {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    width: 35%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carConfig h5 {
+    margin-top: 38px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.carConfigContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 115%;
+    height: 100vh;
+    padding-bottom: 200px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.carConfigBottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20vh;
+    padding: 30px;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+}
+
+.carPrice {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+}
+
+.carPrice h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #15171A;
+}
+
+.carPrice h5 span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #15171A;
+}
+
+.proceed {
+    display: flex;
+    align-items: center;
+    background-color: #007EDB;
+    height: 50px;
+    padding: 5px 30px 5px 30px;
+}
+
+.proceed:hover {
+    cursor: pointer;
+    background-color: rgba(0, 126, 219, 0.8);
+}
+
+.proceed a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.colorsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 1060px) {
+  .carModelContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+    .carPicDesc {
+        width: 100%;
+        height: 50%;
+    }
+
+    .carConfig {
+        width: 100%;
+    }
+}

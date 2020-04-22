@@ -1,0 +1,12 @@
+export const FETCH_CARS = 'FETCH_CARS';
+export const HIDE_LOADER = 'APP/HIDE_LOADER';
+export const SHOW_LOADER = 'APP/SHOW_LOADER';
+export const SHOW_ALERT = 'APP/SHOW_ALERT';
+export const HIDE_ALERT = 'APP/HIDE_ALERT';
+export const SELECT_CAR = 'SELECT_CAR';
+export const FETCH_CAR_DATA = 'FETCH_CAR_DATA';
+export const SET_CAR_TRIM = 'SET_CAR_TRIM';
+export const SET_CAR_COLOR = 'SET_CAR_COLOR';
+export const CHECKOUT_SUCCESS = 'CHECKOUT_SUCCESS';
+export const CAR_SUCCESS_CHECKED = 'CAR_SUCCESS_CHECKED';
+export const CAR_FAIL_CHECKED = 'CAR_FAIL_CHECKED';

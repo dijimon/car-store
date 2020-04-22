@@ -1,0 +1,27 @@
+.catalogue {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.catalogue h4 {
+    text-align: center;
+}
+
+.carsListContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100vh;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1060px) {
+  .carsListContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}

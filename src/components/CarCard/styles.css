@@ -1,0 +1,43 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 280px;
+    margin: 20px;
+    text-decoration: none;
+    box-sizing: content-box;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1060px) {
+  .card {
+    max-width: 375px;
+}
+}
+
+.cardBody {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.cardBody h5,
+.cardBody p {
+    display: inline-block;
+    width: 100%;
+    margin: 0 10px 10px 0;
+}
+
+.cardBody p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #737780;
+}
+
+.card img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
