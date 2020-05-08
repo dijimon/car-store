@@ -13,14 +13,14 @@ const optimization = () => {
     const config = {
 
     };
-	
+
     if (isProd) {
         config.minimizer = [
             new OptimizeCssAssetsWebpackPlugin(),
             new TerserWebpackPlugin()
         ];
     }
-	
+
     return config;
 };
 
@@ -44,11 +44,11 @@ const cssLoaders = (extra) => {
         }
     },
     ];
-	
+
     if (extra) {
         loaders.push(extra);
     }
-	
+
     return loaders;
 };
 
@@ -61,24 +61,24 @@ const babelOptions = preset => {
             '@babel/plugin-proposal-class-properties'
         ]
     };
-	
+
     if (preset) {
         options.presets.push(preset);
     }
-	
+
     return options;
 };
 
 const jsLoaders = () => {
     const loaders = [{
         loader: 'babel-loader',
-        options: babelOptions()
+        options: babelOptions('@babel/preset-react')
     }];
-	
+
     if (isDev) {
         loaders.push('eslint-loader');
     }
-	
+
     return loaders;
 };
 

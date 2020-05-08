@@ -8,7 +8,7 @@ const ChangePackBtn = ({pack, isActive, setTrim}) => {
 
     const _handleClick = () => {
         setTrim();
-    }
+    };
 
     return (
         <div className={s.btn} isActive={isActiveClass} onClick={_handleClick}>
